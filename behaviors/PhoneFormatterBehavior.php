@@ -60,7 +60,7 @@ class PhoneFormatterBehavior extends Behavior
         }
     }
 
-    protected function convertE164($event)
+    public function convertE164($event)
     {
         foreach ($this->attributes as $attribute) {
             $this->owner->{$attribute} = \Yii::$app->formatter->asPhoneE164(
