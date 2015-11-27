@@ -1,0 +1,22 @@
+{
+  "name": "uniqby/yii2-phone-formatter",
+  "description": "Phone numbers formatter and behavior for Yii2 Framework",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Sazanovich",
+      "email": "alexander@uniq.by"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "2.*",
+    "yiisoft/yii2-composer": "2.*",
+    "giggsey/libphonenumber-for-php": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "uniqby\\phoneFormatter\\": ""
+    }
+  }
+}
