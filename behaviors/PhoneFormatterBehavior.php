@@ -44,6 +44,7 @@ class PhoneFormatterBehavior extends Behavior
     public function events()
     {
         return [
+            BaseActiveRecord::EVENT_BEFORE_VALIDATE => 'convertE164',
             BaseActiveRecord::EVENT_BEFORE_INSERT => 'convertE164',
             BaseActiveRecord::EVENT_BEFORE_UPDATE => 'convertE164',
             BaseActiveRecord::EVENT_AFTER_FIND => 'convertInt'
